@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Personal website for Muhammad Affan Qureshi">
+    <meta name="author" content="Muhammad Affan Qureshi">
+
+	<title>ARM Assembler and Simulator</title>
+
+	<!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/padding.css" rel="stylesheet">
+
+	<!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html"><strong><em>Muhammad Affan Qureshi</em></strong></a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html"><strong>About</strong></a>
+                    </li>
+                    <li>
+                        <a href="../portfolio.html"><strong>Portfolio</strong></a>
+                    </li>
+                    <li>
+                        <a href="../CV.pdf" target="_blank"><strong>Resume</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <h1>ARM Assembler and Simulator</h1>
+        <hr>
+
+        <div class="row featurette">
+
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading text-muted">Overview</h2>
+                <p class="lead">For our third year High Level Programming course we had to build an ARM assembler and simulator for a subset of Cortex-M3 Instruction set. <a href="http://fsharp.org/" target="_blank">F#</a> was the high level programming language of choice for this course.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block" src="../images/projects/arm1.jpg" alt="ARM">
+            </div>
+
+        </div>
+        <hr>
+
+        <div class="row featurette">
+            <div class="col-md-12">
+                <h2 class="featurette-heading text-muted">Implementation</h2>
+                <p class="lead">We seperated the tasks of this project into 4 main categories. The Machine State which emulates all the internal of the processor like registers, memory, etc. The Execution which takes in an instruction and the current machine state, executes it and returns a new state. The Parser that takes in the instructions as a string and then returns them in their respective instruction data structures. And lastly the UI which was built using HTML and FABLE which transpiles F# code into a Javascript program. The parser which would take in the instructions as a string and output them in their respective instruction data structures. Checkout our <a href="https://github.com/balassaloci/HLP_ARM_Simulator" target="_blank">github repository</a> for the complete code of the simulator.</p>
+
+                <p class="lead">I devloped the complete machine state and the execution of all memory related instructions. I used an abstract data type (ADT) for the machine state. Several functions were written to provide a complete interface for operation on the machine state like getting value from a register, writing to memory, etc. The execution of memory instructions was also done using an ADT with custom types developed for different kinds of instructions. The complete implementation can be seen in our <a href="https://github.com/balassaloci/HLP_ARM_Simulator" target="_blank">repository</a> as mentioned above. 
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row featurette">
+            <div class="col-md-12">
+                <h2 class="featurette-heading text-muted">Outcome</h2>
+                <p class="lead">This was a very challenging project which greatly helped in improving my programming skills. I got familiar with the functional programming paradigm and was also introduced to test driven development. The project allowed me deepen my knowledge about the arm architecture. Due to the collaborative nature of the project I also got comfortable with using git and collaborating in large software projects.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

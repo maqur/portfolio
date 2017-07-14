@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Personal website for Muhammad Affan Qureshi">
+    <meta name="author" content="Muhammad Affan Qureshi">
+
+	<title>EEBug</title>
+
+	<!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/padding.css" rel="stylesheet">
+
+	<!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<!-- Nav Bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html"><strong><em>Muhammad Affan Qureshi</em></strong></a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html"><strong>About</strong></a>
+                    </li>
+                    <li>
+                        <a href="../portfolio.html"><strong>Portfolio</strong></a>
+                    </li>
+                    <li>
+                        <a href="../CV.pdf" target="_blank"><strong>Resume</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+    	
+    	<h1>EEBug</h1>
+    	<hr>
+
+        <div class="row featurette">
+
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading text-muted">Overview</h2>
+                <p class="lead">For our first year group project we had to design and build a line following robot. The specification required the robot to follow an arbitrary line that had a specified maximum turning angle and could also have short breaks in it. At the end of the line it had to continue straight for further 20 cms and then spiral inwards for at least one complete rotation.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block" src="../images/projects/eebug1.jpg" alt="EEBug">
+            </div>
+
+        </div>
+        <hr>
+        <div class="row featurette">
+            <div class="col-md-6">
+                <h2 class="featurette-heading text-muted">Implementation</h2>
+                <p class="lead">There were two ways in which this could be acheived, analogue in which the whole design was based on components like transistors, resistors, etc and digital in which a microcontroller was used all the required login. My group decided to use a microcontroller for the logic and the state machien. The software was written and compiled using the arduino IDE. We used pulse width modulation to control the speed of motors. Infrared sensors were used for detecting the line and thresholds were set for the readings.</p> 
+                <p class="lead">I was mainly involved in writing the state machinek software and designing the resistor circuit for connecting the sensors.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="featurette-image img-responsive center-block" src="../images/projects/eebug3.jpg" alt="EEBug">
+            </div>
+
+        </div>
+
+        <hr>
+
+    </div>
+
+</body>
+</html>

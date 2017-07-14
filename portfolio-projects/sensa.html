@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Personal website for Muhammad Affan Qureshi">
+    <meta name="author" content="Muhammad Affan Qureshi">
+
+	<title>SenSa</title>
+
+	<!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/padding.css" rel="stylesheet">
+
+	<!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<!-- Nav Bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html"><strong><em>Muhammad Affan Qureshi</em></strong></a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html"><strong>About</strong></a>
+                    </li>
+                    <li>
+                        <a href="../portfolio.html"><strong>Portfolio</strong></a>
+                    </li>
+                    <li>
+                        <a href="../CV.pdf" target="_blank"><strong>Resume</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <h1>SenSa</h1>
+        <hr>
+
+        <div class="row featurette">
+
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading text-muted">Overview</h2>
+                <p class="lead">For our third year Embedded Systems coursework we had to develop an IoT product with the provided sensors. My group was given an Adafruit Huzzah Feather development board which has an ESP8266 WiFi microcontroller for processing and communication, and an HMC5883L magnetometer sensor.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block" src="../images/projects/sensa2.jpg" alt="Sensor">
+            </div>
+
+        </div>
+        <hr>
+        <div class="row featurette">
+            <div class="col-md-6">
+                <h2 class="featurette-heading text-muted">Product Description</h2>
+                <p class="lead">We decided to build a smart home solution in which the sensor will be attached to a wire for detecting the flow of current. This can be used to record the time for the which the appliance was turned on and if the voltage is known the power consumption can also be approximated. Several sensors attached to appliances around the house will allow the power usage of the whole house to be analyzed. Although machine learning was not implemented  it can be used in the future to make suggestions on how the power usage can be reduced. Check out the <a href="https://maqur.github.io/SenSa/" target="_blank">SenSa</a> website for more details on the product.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="featurette-image img-responsive center-block" src="../images/projects/sensa1.jpg" alt="Dev Board">
+            </div>
+
+        </div>
+        
+        <hr>
+
+        <div class="row featurette">
+            <div class="col-md-12">
+                <h2 class="featurette-heading text-muted">Implementation</h2>
+                <p class="lead">The huzzah feather board was programmed using micro python and the data from sensor was obtained using the I2C protocol. The raw data from the sensor was converted on board to the units gauss and thresholds were used to detect when the device was turned on and off. MQTT protocol was used to communicate with the server. When the development board is turned on it subscribes to a topic to get the current time and when it detects that the connected appliance is turned on or off it records the time and publishes the information on a specified topic. The server gets this information using a subscriber and records it in a database. This information is analyzed and presented in user readable way when needed.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row featurette">
+            <div class="col-md-12">
+                <h2 class="featurette-heading text-muted">Outcome</h2>
+                <p class="lead">During this project I learnt to use the MQTT server and the I2C protocols both of which I was unfamiliar with before. I was also able improve my skill in Python programming language.</p>
+            </div>
+        </div>
+
+        <hr>
+
+    </div>
+
+
+
+
+</body>
+</html>
